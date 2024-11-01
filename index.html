@@ -2,11 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .language-switcher {
+            text-align: right;
+            margin: 10px 20px;
+        }
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        h3 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+        a {
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to Sashavav's website</h1>
-<p>Here's nothing yet, checkout later</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium, adipisci cum deleniti dignissimos ea inventore molestias nemo nobis placeat quibusdam tenetur velit! Deserunt magni quisquam recusandae tempora vel?</p>
+
+<header>
+    <h1>Александр Воеводский / Alexander Voevodskiy</h1>
+    <h2>Разработчик / Developer</h2>
+</header>
+
+<div class="language-switcher">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('ru')">Русский</button>
+</div>
+
+<section id="about">
+    <h3>About Me / О себе</h3>
+    <p>Welcome to my portfolio! I am a developer with a passion for technology and teamwork.</p>
+    <p>Добро пожаловать в мое портфолио! Я разработчик с увлечением к технологиям и командной работе.</p>
+</section>
+
+<section id="skills">
+    <h3>Skills / Навыки</h3>
+    <ul>
+        <li>Communication / Коммуникабельность</li>
+        <li>Responsibility / Ответственность</li>
+        <li>Teamwork / Умение работать в команде</li>
+        <li>Analytical Thinking / Аналитическое мышление</li>
+        <li>Independence / Самостоятельность</li>
+        <li>Learning Ability / Умение учиться и развиваться</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h3>Contact Information / Контактная информация</h3>
+    <p>Email: a.voevodskii@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Sasha-VAV">github.com/Sasha-VAV</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Александр Воеводский / Alexander Voevodskiy</p>
+</footer>
+
+<script>
+    function switchLanguage(lang) {
+        const about = document.getElementById('about');
+        const skills = document.getElementById('skills');
+
+        if (lang === 'en') {
+            about.innerHTML = `
+            <h3>About Me / О себе</h3>
+            <p>Welcome to my portfolio! I am a developer with a passion for technology and teamwork.</p>`;
+            skills.innerHTML = `
+            <h3>Skills / Навыки</h3>
+            <ul>
+                <li>Communication / Коммуникабельность</li>
+                <li>Responsibility / Ответственность</li>
+                <li>Teamwork / Умение работать в команде</li>
+                <li>Analytical Thinking / Аналитическое мышление</li>
+                <li>Independence / Самостоятельность</li>
+                <li>Learning Ability / Умение учиться и развиваться</li>
+            </ul>`;
+        } else {
+            about.innerHTML = `
+            <h3>About Me / О себе</h3>
+            <p>Добро пожаловать в мое портфолио! Я разработчик с увлечением к технологиям и командной работе.</p>`;
+            skills.innerHTML = `
+            <h3>Skills / Навыки</h3>
+            <ul>
+                <li>Коммуникабельность / Communication</li>
+                <li>Ответственность / Responsibility</li>
+                <li>Умение работать в команде / Teamwork</li>
+                <li>Аналитическое мышление / Analytical Thinking</li>
+                <li>Самостоятельность / Independence</li>
+                <li>Умение учиться и развиваться / Learning Ability</li>
+            </ul>`;
+        }
+    }
+</script>
+
 </body>
 </html>
