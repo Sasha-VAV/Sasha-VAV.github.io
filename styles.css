@@ -132,6 +132,66 @@ section.visible {
     transform: translateY(-2px);
 }
 
+/* Education Section */
+.education-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    border-left: 4px solid var(--accent);
+}
+
+.education-item h3 {
+    color: var(--accent);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.education-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.courses-section {
+    margin-top: 50px;
+}
+
+.courses-section h3 {
+    color: var(--accent);
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 3px solid var(--primary);
+}
+
+.course-item p {
+    margin-right: 20px;
+}
+
+.course-item span {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
 /* Projects Section */
 .section-title {
     font-size: 2.5rem;
