@@ -15,142 +15,75 @@
 
 <section class="hero">
     <div class="hero-content">
-        <h1 lang="ru">Александр Воеводский</h1>
-        <h1 lang="en">Alexander Voevodskiy</h1>
-        <h2 lang="ru">Инженер в области NLP</h2>
-        <h2 lang="en">NLP Engineer</h2>
+        <h1 lang="ru" class="floating-name">Александр Воеводский</h1>
+        <h1 lang="en" class="floating-name">Alexander Voevodskiy</h1>
+        <h2 lang="ru" class="floating-title">Инженер в области NLP</h2>
+        <h2 lang="en" class="floating-title">NLP Engineer</h2>
 
         <div class="contact-info">
-            <a href="mailto:a.voevodskii@gmail.com" class="contact-item">
+            <a href="mailto:a.voevodskii@gmail.com" class="contact-item pulse">
                 <i class="fas fa-envelope"></i>
                 <span>a.voevodskii@gmail.com</span>
             </a>
-            <a href="https://t.me/voalexvl" target="_blank" class="contact-item">
+            <a href="https://t.me/voalexvl" target="_blank" class="contact-item pulse">
                 <i class="fab fa-telegram"></i>
                 <span>t.me/voalexvl</span>
             </a>
-            <a href="https://github.com/Sasha-VAV" target="_blank" class="contact-item">
+            <a href="https://github.com/Sasha-VAV" target="_blank" class="contact-item pulse">
                 <i class="fab fa-github"></i>
                 <span>github.com/Sasha-VAV</span>
             </a>
         </div>
     </div>
-</section>
-
-<section id="about">
-    <div class="container">
-        <h2 class="section-title" lang="ru">Обо мне</h2>
-        <h2 class="section-title" lang="en">About Me</h2>
-
-        <div class="about-content">
-            <p lang="ru">
-                Инженер в области обработки естественного языка с академическим образованием в компьютерных науках.
-                Специализируюсь на разработке и внедрении сложных NLP-решений, включая RAG-системы и тонкую настройку языковых моделей.
-            </p>
-            <p lang="en">
-                Natural Language Processing engineer with academic background in computer science.
-                Specialized in developing and implementing complex NLP solutions including RAG systems and fine-tuning language models.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="education">
-    <div class="container">
-        <h2 class="section-title" lang="ru">Образование</h2>
-        <h2 class="section-title" lang="en">Education</h2>
-
-        <div class="education-item">
-            <h3 lang="ru">РТУ МИРЭА: Информатика и вычислительная техника</h3>
-            <h3 lang="en">RTU MIREA: Computer Science</h3>
-            <span class="date" lang="ru">Бакалавриат, 2023 - 2027, Москва</span>
-            <span class="date" lang="en">Bachelor's Degree, 2023 - 2027, Moscow</span>
-            <p lang="ru">Средний балл: 5.0</p>
-            <p lang="en">GPA: 5.0</p>
-        </div>
-
-        <div class="courses-section">
-            <h3 lang="ru">Курсы</h3>
-            <h3 lang="en">Courses</h3>
-            <div class="courses-grid">
-                <div class="course-item">
-                    <p>МФТИ: NLP & RL</p>
-                    <span>2025</span>
-                </div>
-                <div class="course-item">
-                    <p>Яндекс: Хэндбук по машинному обучению</p>
-                    <span>2024-2025</span>
-                </div>
-                <div class="course-item">
-                    <p>Berkeley: ИИ-агенты</p>
-                    <span>2025</span>
-                </div>
-                <div class="course-item">
-                    <p>МФТИ: Классическое машинное обучение</p>
-                    <span>2024-2025</span>
-                </div>
-                <div class="course-item">
-                    <p>МИРЭА: Глубокое обучение на PyTorch</p>
-                    <span>2024</span>
-                </div>
-            </div>
-        </div>
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
     </div>
 </section>
 
 <section id="projects">
     <div class="container">
-        <h2 class="section-title" lang="ru">Проекты</h2>
-        <h2 class="section-title" lang="en">Projects</h2>
+        <h2 class="section-title slide-in" lang="ru">Опыт работы в проектах</h2>
+        <h2 class="section-title slide-in" lang="en">Project Experience</h2>
 
-        <div class="project-item">
+        <div class="project-item fade-in">
             <div class="project-header">
                 <h3 lang="ru">ИИ-агент для ответов на вопросы по DnD</h3>
                 <h3 lang="en">AI Agent for DnD Q&A</h3>
-                <span class="project-date" lang="ru">Дек 2024 - Настоящее время · 4 мес</span>
-                <span class="project-date" lang="en">Dec 2024 - Present · 4 mos</span>
-                <h4 lang="ru">NLP Engineer</h4>
-                <h4 lang="en">NLP Engineer</h4>
+                <div class="project-meta">
+                    <span class="project-role" lang="ru">NLP Engineer</span>
+                    <span class="project-role" lang="en">NLP Engineer</span>
+                    <span class="project-date" lang="ru">Дек 2024 - Настоящее время · 4 мес, Москва</span>
+                    <span class="project-date" lang="en">Dec 2024 - Present · 4 mos, Moscow</span>
+                </div>
             </div>
             <div class="project-content">
                 <ul>
-                    <li lang="ru"><strong>Разработка базы знаний:</strong> Создал систему парсинга и обработки данных с веб-источников, включая очистку и структурирование 7000+ статей по DnD с использованием BeautifulSoup и markdownify</li>
-                    <li lang="ru"><strong>RAG-система:</strong> Реализовал полный пайплайн Retrieval-Augmented Generation с семантическим поиском в Elasticsearch и генерацией ответов через LLM (GPT-4o)</li>
-                    <li lang="ru"><strong>Оптимизация поиска:</strong> Дообучил модель e5-multilingual на доменных данных DnD, применяя методы hard negatives mining и аугментации данных через augmentex</li>
-                    <li lang="ru"><strong>Мониторинг:</strong> Настроил систему логирования и анализа запросов через Langfuse для отслеживания качества ответов</li>
-                    <li lang="ru"><strong>Развертывание:</strong> Создал Docker-контейнеры для 7 микросервисов и развернул систему на сервере с балансировкой нагрузки</li>
-                    <li lang="ru"><strong>Генерация контента:</strong> Разработал агента на LangGraph для создания уникальных предысторий персонажей с сохранением консистентности лора</li>
-
-                    <li lang="en"><strong>Knowledge Base Development:</strong> Built web scraping and data processing system for 7000+ DnD articles using BeautifulSoup and markdownify</li>
-                    <li lang="en"><strong>RAG System:</strong> Implemented full Retrieval-Augmented Generation pipeline with semantic search in Elasticsearch and answer generation via LLM (GPT-4o)</li>
-                    <li lang="en"><strong>Search Optimization:</strong> Fine-tuned e5-multilingual model on DnD domain data using hard negatives mining and data augmentation via augmentex</li>
-                    <li lang="en"><strong>Monitoring:</strong> Set up logging and analysis system via Langfuse for tracking response quality</li>
-                    <li lang="en"><strong>Deployment:</strong> Created Docker containers for 7 microservices and deployed the system with load balancing</li>
-                    <li lang="en"><strong>Content Generation:</strong> Developed LangGraph agent for creating unique character backstories with lore consistency</li>
+                    <li><span class="bullet">—</span>Парсил и структурировал данные о DnD с веб-источников c помощью BeautifulSoup и markdownify, создав базу из 7000+ статей</li>
+                    <li><span class="bullet">—</span>Реализовал сплиттер с добавлением метаданных</li>
+                    <li><span class="bullet">—</span>Создал RAG-пайплайн: семантический поиск в Elasticsearch, генерация ответов с LLM, логирование в Langfuse</li>
+                    <li><span class="bullet">—</span>Развернул всю систему из 7 сервисов, работающую асинхронно, на сервере с помощью Docker Compose</li>
+                    <li><span class="bullet">—</span>Автоматизировал создание датасета на 5100 примеров для классификации и семантического поиска при помощи синтетической генерации QA пар с GPT-4o</li>
+                    <li><span class="bullet">—</span>Дообучил e5-multilingual на доменных данных DnD с помощью SentenceTransformers, hard negatives mining, augmentex, MLflow</li>
+                    <li><span class="bullet">—</span>Создал агента для генерации предыстории персонажа при помощи LangGraph</li>
                 </ul>
             </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item fade-in">
             <div class="project-header">
                 <h3 lang="ru">Приложение для знакомств</h3>
                 <h3 lang="en">Dating Application</h3>
-                <span class="project-date" lang="ru">Июль 2024 - Дек 2024 · 6 мес</span>
-                <span class="project-date" lang="en">Jul 2024 - Dec 2024 · 6 mos</span>
-                <h4 lang="ru">Fullstack-разработчик</h4>
-                <h4 lang="en">Fullstack Developer</h4>
+                <div class="project-meta">
+                    <span class="project-role" lang="ru">Fullstack-разработчик</span>
+                    <span class="project-role" lang="en">Fullstack Developer</span>
+                    <span class="project-date" lang="ru">Июль 2024 - Дек 2024 · 6 мес, Москва</span>
+                    <span class="project-date" lang="en">Jul 2024 - Dec 2024 · 6 mos, Moscow</span>
+                </div>
             </div>
             <div class="project-content">
                 <ul>
-                    <li lang="ru"><strong>Бэкенд:</strong> Разработал систему микросервисов на Java Spring Boot, включая JWT-аутентификацию через Spring Security и OAuth2</li>
-                    <li lang="ru"><strong>Чат:</strong> Реализовал систему обмена сообщениями в реальном времени с использованием WebSocket и STOMP протокола</li>
-                    <li lang="ru"><strong>Фронтенд:</strong> Создал адаптивный UI мобильного приложения с Jetpack Compose, включая анимации и кастомные компоненты</li>
-                    <li lang="ru"><strong>Оптимизация:</strong> Настроил кэширование данных через Redis и систему очередей для обработки событий</li>
-
-                    <li lang="en"><strong>Backend:</strong> Developed Java Spring Boot microservices including JWT authentication via Spring Security and OAuth2</li>
-                    <li lang="en"><strong>Chat:</strong> Implemented real-time messaging system using WebSocket and STOMP protocol</li>
-                    <li lang="en"><strong>Frontend:</strong> Created responsive mobile UI with Jetpack Compose including animations and custom components</li>
-                    <li lang="en"><strong>Optimization:</strong> Configured Redis caching and event queue processing system</li>
+                    <li><span class="bullet">—</span>Разработал микросервисы на Java Spring: аутентификация с Spring Security, чат в реальном времени на WebSocket</li>
+                    <li><span class="bullet">—</span>Создал UI мобильного приложения с Jetpack Compose</li>
                 </ul>
             </div>
         </div>
@@ -159,76 +92,84 @@
 
 <section id="skills">
     <div class="container">
-        <h2 class="section-title" lang="ru">Навыки</h2>
-        <h2 class="section-title" lang="en">Skills</h2>
+        <h2 class="section-title slide-in" lang="ru">Навыки</h2>
+        <h2 class="section-title slide-in" lang="en">Skills</h2>
 
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3 lang="ru">NLP</h3>
-                <h3 lang="en">NLP</h3>
-                <ul>
-                    <li>Transformers (BERT, GPT, T5)</li>
-                    <li>Sentence Embeddings (e5, all-MiniLM)</li>
-                    <li>RAG Systems</li>
-                    <li>LangChain/LangGraph</li>
-                    <li>LLM Fine-tuning</li>
-                    <li>Text Processing Pipelines</li>
-                </ul>
+        <div class="skills-container">
+            <div class="skills-column fade-in">
+                <div class="skill-category">
+                    <h3>NLP</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Transfer learning</div>
+                        <div class="skill-item">Transformers</div>
+                        <div class="skill-item">Sentence-transformers</div>
+                        <div class="skill-item">LangChain, LangGraph</div>
+                        <div class="skill-item">Langfuse, Llama-index</div>
+                        <div class="skill-item">Sentencepiece</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill-category">
-                <h3 lang="ru">Машинное обучение</h3>
-                <h3 lang="en">Machine Learning</h3>
-                <ul>
-                    <li>PyTorch Lightning</li>
-                    <li>MLflow/WandB</li>
-                    <li>Scikit-learn/Pandas</li>
-                    <li>XGBoost/CatBoost</li>
-                    <li>Data Augmentation</li>
-                </ul>
+            <div class="skills-column fade-in" style="animation-delay: 0.2s">
+                <div class="skill-category">
+                    <h3 lang="ru">Машинное обучение</h3>
+                    <h3 lang="en">Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">PyTorch</div>
+                        <div class="skill-item">MLflow, WandB</div>
+                        <div class="skill-item">Sklearn, Pandas</div>
+                        <div class="skill-item">AutoML, XGBoost</div>
+                        <div class="skill-item">CatBoost, LightGBM</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill-category">
-                <h3 lang="ru">Программирование</h3>
-                <h3 lang="en">Programming</h3>
-                <ul>
-                    <li>Python (Advanced)</li>
-                    <li>Java (Spring)</li>
-                    <li>C++ (Basic)</li>
-                    <li>SQL</li>
-                </ul>
+            <div class="skills-column fade-in" style="animation-delay: 0.4s">
+                <div class="skill-category">
+                    <h3 lang="ru">Программирование</h3>
+                    <h3 lang="en">Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">C++</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill-category">
-                <h3 lang="ru">Технологии</h3>
-                <h3 lang="en">Technologies</h3>
-                <ul>
-                    <li>Docker/Kubernetes</li>
-                    <li>Elasticsearch</li>
-                    <li>FastAPI/Flask</li>
-                    <li>PostgreSQL/MongoDB</li>
-                    <li>Git/GitHub Actions</li>
-                </ul>
+            <div class="skills-column fade-in" style="animation-delay: 0.6s">
+                <div class="skill-category">
+                    <h3 lang="ru">Технологии</h3>
+                    <h3 lang="en">Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Linux</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">FastAPI</div>
+                        <div class="skill-item">Elasticsearch</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">Java Spring</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer>
+<footer class="fade-in">
     <div class="container">
         <h3 lang="ru">Контакты</h3>
         <h3 lang="en">Contacts</h3>
 
         <div class="contact-info">
-            <a href="mailto:a.voevodskii@gmail.com" class="contact-item">
+            <a href="mailto:a.voevodskii@gmail.com" class="contact-item pulse">
                 <i class="fas fa-envelope"></i>
                 <span>a.voevodskii@gmail.com</span>
             </a>
-            <a href="https://t.me/voalexvl" target="_blank" class="contact-item">
+            <a href="https://t.me/voalexvl" target="_blank" class="contact-item pulse">
                 <i class="fab fa-telegram"></i>
                 <span>t.me/voalexvl</span>
             </a>
-            <a href="https://github.com/Sasha-VAV" target="_blank" class="contact-item">
+            <a href="https://github.com/Sasha-VAV" target="_blank" class="contact-item pulse">
                 <i class="fab fa-github"></i>
                 <span>github.com/Sasha-VAV</span>
             </a>
