@@ -41,8 +41,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('section, .section-title, .project-item, .skills-column, footer').forEach(el => {
-    observer.observe(el);
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
 });
 
 // Initialize
